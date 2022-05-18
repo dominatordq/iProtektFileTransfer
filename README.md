@@ -22,7 +22,3 @@ Once the CSV file format is correct, you can now send your file via SFTP. Follow
 - Be sure to include the Server URL, Username and Password, and SSH private key inputs with the correct information.
 - Once a connection with the server has been established, upload your CSV
 - After the CSV is uploaded, be sure no errors were found. Refresh your SFTP connection to verify this (if there is an error, the file you just sent will be deleted and an error log will generate in the directory you are currently in. You will be able to download this file.
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
