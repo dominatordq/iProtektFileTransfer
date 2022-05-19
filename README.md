@@ -31,10 +31,19 @@ Click this link to view a sample CSV that follows this format: https://github.co
 You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, subsequent CSV files will be sent (via SFTP) **once a day with all the transaction data for the most recent day (realtime data)**.
 The CSV files must follow the CSV File Format above.
 
+## Step-by-Step Guide
+  (Historical data)
+  1. Export transaction (betting) data to a CSV of your user-base spanning the previous year (YTD). Make sure to encrypt each 'user_id' for security purposes.
+  (Realtime data)
+  1. Export transaction (betting) data to a CSV of your user-base spanning the most recent day. Make sure to encrypt each 'user_id' for security purposes.
+  2. Follow the steps outlined in **How to Send A File** below.
+  3. Be sure to refresh your SFTP connection periodically over the next minute or so. If your file contains an error, an error log will appear in the current directory you are in. If your file contains no errors, a success log will appear.
+  4. If the file contained an error, download the error log to view where the error(s) occurred. After the error(s) have been fixed, repeat steps 2-3. 
+
 ## How to Send A File
 
 Once the CSV file format is correct, you can now send your file via SFTP. Follow the steps below to successfully send a file:
 - First, open a connection using your SFTP client application or command line tool.
 - Be sure to include the Server URL, Username and Password, and SSH private key inputs with the correct information.
-- Once a connection with the server has been established, upload your CSV
+- Once a connection with the server has been established, upload your CSV.
 - After the CSV file is uploaded, make sure you 'refresh' your SFTP connection after a minute or two to ensure there were no errors (if there is an error, the CSV file that was just sent will be deleted and an error log will generate in the directory you are currently in. You will be able to download this file).
