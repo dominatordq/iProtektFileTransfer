@@ -26,7 +26,7 @@ See the chart below for the accepted order and data types of your CSV columns (i
 - **account_bal**: the dollar balance of the user's account after the transaction
 
 ### SFTP Requirements
-You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, **subsequent CSV files should be sent (via SFTP) once a day with all the transaction data for the current day**.
+You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, subsequent CSV files will be sent (via SFTP) **once a day with all the transaction data for the most recent day (realtime data)**.
 The CSV files must follow the CSV File Format above.
 
 ## How to Send A File
