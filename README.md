@@ -14,7 +14,7 @@ See the chart below for the accepted order and data types of your CSV columns (i
 |----------------|--------|----------------------|-----------------|--------------------------|-----------------------|
 |**Data Type**   |`STRING`|`DATETIME`            |`STRING`            |`NUMBER`          |`NUMBER`               | 
 - **user_id**: the encrypted string of a user (from their email, phone number, username, etc.)
-- **transaction_datetime**: the date and time a transaction was made (e.g. mm/dd/yyyy hh:mm:ss or yyyy-mm-dd hh:mm:ss)
+- **transaction_datetime**: the date and time (in military time) a transaction was made (e.g. mm/dd/yyyy hh:mm:ss or yyyy-mm-dd hh:mm:ss)
 - **transaction_type**: the type of transaction made (can either be 'Deposit', 'Wager', 'Win', or 'Withdraw')
 - **transaction_amount**: the dollar amount of the transaction
 - **account_bal**: the dollar balance of the user's account after the transaction
