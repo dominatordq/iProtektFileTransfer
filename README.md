@@ -13,10 +13,15 @@ See the chart below for the accepted order and data types of your CSV columns (i
 |                |user_id |transaction_datetime  |transaction_type | transaction_amount |account_bal (optional) |
 |----------------|--------|----------------------|-----------------|--------------------------|-----------------------|
 |**Data Type**   |`STRING`|`DATETIME`            |`STRING`            |`NUMBER`          |`NUMBER`               | 
+- **user_id**: the encrypted string of a user (from their email, phone number, username, etc.)
+- **transaction_datetime**: the date and time a transaction was made (e.g. mm/dd/yyyy hh:mm:ss or yyyy-mm-dd hh:mm:ss)
+- **transaction_type**: the type of transaction made (can either be 'Deposit', 'Wager', 'Win', or 'Withdraw')
+- **transaction_amount**: the dollar amount of the transaction
+- **account_bal**: the dollar balance of that user's account after that transaction
 
 ### SFTP Requirements
-You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, **subsequent CSV files should be sent (via SFTP) once a day with all the transaction data for the current day (realtime data)**.
-Both the hisotical and realtime data must follow the CSV File Format above.
+You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, **subsequent CSV files should be sent (via SFTP) once a day with all the transaction data for the current day**.
+The CSV files must follow the CSV File Format above.
 
 ## How to Send A File
 
