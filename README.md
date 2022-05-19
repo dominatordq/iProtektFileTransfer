@@ -32,7 +32,7 @@ You will be required to send (via SFTP) **one CSV file with transaction data goi
 The CSV files must follow the CSV File Format above.
 
 ## Step-by-Step Guide
-  1 Export transaction (betting) data to a CSV of your user-base spanning either the previous year-to-date **(historical data)** or the previous day **(realtime data)**. Make sure to encrypt each 'user_id' for security purposes.
+  1. Export transaction (betting) data to a CSV of your user-base spanning either the previous year-to-date **(historical data)** or the previous day **(realtime data)**. Make sure to encrypt each 'user_id' for security purposes.
   2. Follow the steps outlined in **How to Send A File** below.
   3. Be sure to refresh your SFTP connection periodically over the next minute or so. If your file contains an error, an error log will appear in the current directory you are in. If your file contains no errors, a success log will appear.
   4. If the file contained an error, download the error log to view where the error(s) occurred. After the error(s) have been fixed, repeat steps 2-3. 
