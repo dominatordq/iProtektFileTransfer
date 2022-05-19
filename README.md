@@ -3,6 +3,7 @@
 The Operator File Transfer Protocol will involve sending transactional betting data to iProtekt. There are two types of betting data required: historical data and realtime data. Each of these will be transferred via SFTP as a CSV file. The transfer of this data should follow these steps:
   1. Transfer of the historical data (all betting data that occurred over the previous YEAR)
   2. Transfer of the realtime data (all betting data that occurred on the current DAY)
+
 The realtime data will be sent once per day after the historical data is sent.
 
 ## Prerequisites
