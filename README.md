@@ -17,7 +17,7 @@ See the chart below for the accepted order and data types of your CSV columns (i
 - **transaction_datetime**: the date and time a transaction was made (e.g. mm/dd/yyyy hh:mm:ss or yyyy-mm-dd hh:mm:ss)
 - **transaction_type**: the type of transaction made (can either be 'Deposit', 'Wager', 'Win', or 'Withdraw')
 - **transaction_amount**: the dollar amount of the transaction
-- **account_bal**: the dollar balance of that user's account after that transaction
+- **account_bal**: the dollar balance of the user's account after the transaction
 
 ### SFTP Requirements
 You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, **subsequent CSV files should be sent (via SFTP) once a day with all the transaction data for the current day**.
