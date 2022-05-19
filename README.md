@@ -8,7 +8,7 @@
 
 ## CSV File Format
 
-See the chart below for the accepted order and data types of your CSV columns (if the order of columns or data type is incorrect, an log file will generate outlining the error(s) in your CSV): 
+See the chart below for the accepted order and data types of your CSV columns (if the order of columns or data type is incorrect, a log file will generate in your SFTP directory outlining the error(s) in your CSV): 
 
 |                |user_id |transaction_datetime  |transaction_type | transaction_amount |account_bal (optional) |
 |----------------|--------|----------------------|-----------------|--------------------------|-----------------------|
