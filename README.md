@@ -3,7 +3,7 @@
 ## Prerequisites
 - A way to export a table or set of data to a CSV file (see **CSV File Format** section below for information on the columns and data types you will need to provide, along with the order these columns need to be in).  
 - An SFTP client application or command line tool (e.g. WinSCP, Cyberduck, PuTTY PSFTP, OpenSSH, etc.).
-- A generated SSH public/private key pair (be sure to send us your public key, otherwise you won't be able to connect to our server).
+- A generated SSH public/private key pair **(be sure to send us your public key, otherwise you won't be able to connect to our server)**.
 - A username and password provided to you by iProtekt to access our server.
 
 ## CSV File Format
