@@ -17,8 +17,8 @@ The historical data will only be transferred **once**. The realtime data is expe
 See the chart below for the accepted order and data types of your CSV columns (if the order of columns or data type is incorrect, a log file will generate in your SFTP directory outlining the error(s) in your CSV): 
 
 |                |user_id |transaction_datetime  |transaction_type | transaction_amount |account_bal (optional) |
-|----------------|--------|----------------------|-----------------|--------------------------|-----------------------|
-|**Data Type**   |`STRING`|`DATETIME`            |`STRING`            |`NUMBER`          |`NUMBER`               | 
+|----------------|--------|----------------------|-----------------|--------------------|-----------------------|
+|**Data Type**   |`STRING`|`DATETIME`            |`STRING`         |`NUMBER`            |`NUMBER`               | 
 - **user_id**: the encrypted string of a user (from their email, phone number, username, etc.)
 - **transaction_datetime**: the date and time (in military time) a transaction was made (e.g. mm/dd/yyyy hh:mm:ss or yyyy-mm-dd hh:mm:ss)
 - **transaction_type**: the type of transaction made (can either be 'Deposit', 'Wager', 'Win', or 'Withdraw')
@@ -32,7 +32,7 @@ You will be required to send (via SFTP) **one CSV file with transaction data goi
 The CSV files must follow the CSV File Format above.
 
 ## Step-by-Step Guide
-  1. Generate a public/private SSH key pair. Send your public key to dom@iprotekt.ai to set up your SFTP directory.
+  1. Generate a public/private SSH key pair. Send your public key to dom@iprotekt.ai. Hang on to your private key, you will need it to connect to your iProtekt SFTP directory.
   2. Export transaction (betting) data to a CSV of your user-base spanning either the previous year-to-date **(historical data)** or the previous day **(realtime data)**. Make sure to encrypt each 'user_id' for security purposes.
   3. Follow the steps outlined in **How to Send A File** below.
   4. Be sure to refresh your SFTP connection periodically over the next minute or so. If your file contains an error, an error log will appear in the current directory you are in. If your file contains no errors, a success log will appear.
