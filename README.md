@@ -25,7 +25,7 @@ See the chart below for the accepted order and data types of your CSV columns (i
 - **transaction_amount**: the dollar amount of the transaction
 - **account_bal**: the dollar balance of the user's account after the transaction
 
-Click this link to view a sample CSV that follows this format: https://github.com/dominatordq/iProtektFileTransfer/blob/main/example_csv.CSV
+Click [here](https://github.com/dominatordq/iProtektFileTransfer/blob/main/example_csv.CSV) to view a sample CSV that follows this format.
 
 ### SFTP Requirements
 You will be required to send (via SFTP) **one CSV file with transaction data going back one full year (historical data)**. After the historical data is transferred, subsequent CSV files will be sent (via SFTP) **once a day with all the transaction data for the most recent day (realtime data)**.
